@@ -21,12 +21,12 @@ This is a list of my currently/past jobs, projects,...
 /*
         wirisungs.dev, a riel developer!
     */
-    
+
     //system("cls")
     #pragma GCC optimize("O3")
     #include <bits/stdc++.h>
     // #include <ext/pb_ds/assoc_container.hpp>
-    
+
     #define TIME (1.0 * clock() / CLOCKS_PER_SEC)
     #define tc int t = 1; cin >> t; for(int i = 1; i <= t; i++)
     #define F first
@@ -54,7 +54,7 @@ This is a list of my currently/past jobs, projects,...
     #define sqr(a) (a)*(a)
     #define ansyes "YES"
     #define ansno "NO"
-    #define nl endl 
+    #define nl endl
     #define opt() ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     #define openfile(name) freopen(name".inp", "r", stdin); freopen(name".out", "w", stdout);
     #define cerrtime(time, movie, song) cerr << "Time elapsed: " << time << "s\nToday's recommend anime: " << movie << "\nNow playing: " << song << "\nCode by untrusted (a.k.a kuzeki.hitoru).\n";
@@ -69,11 +69,11 @@ This is a list of my currently/past jobs, projects,...
     #define retbool(a) return cout << (a ? ansyes : ansno) << nl, void();
     #define iteaccess(v) for(auto it = v.begin(); it != v.end(); it++)
     #define rtc(n) cout << "Case #" << n << nl;
-    
+
     #define INT_CHECK 1e5
     const int INT_SS = 1e9 + 5;
     const int MOD = 1e9 + 7;
-    
+
     using namespace std;
     // using namespace __gnu_pbds;
     typedef long long ll;
@@ -103,12 +103,12 @@ This is a list of my currently/past jobs, projects,...
     using mstrl = map<str, ll>;
     using mistr = map<int, str>;
     using mlstr = map<ll, str>;
-    
+
     int subarray[2009][2009];
-    
+
     // void setin(str c){ freopen(c.c_str(), "r", "stdin"); }
     // void setout(str c){ freopen(c.c_str(), "w", "stdout")
-    
+
     // find element nearest to x
     // auto it = s.lower_bound(x);
     // if(it == s.begin()) {
@@ -121,40 +121,40 @@ This is a list of my currently/past jobs, projects,...
     //     if(x - b < a - x) cout << b << nl;
     //     else cout << a << nl;
     // }
-    
+
     // indexed_set func (work with iterator (auto)):
     // s.find_by_order(a): returns an iterator to the element at a given position
     // s.order_of_key(a): returns the pos of a given element
-    
+
     #define maxN 1e5 + 1;
-    
-    
+
+
     vl createPFS(const vl &inp){
         vl psum(vsize(inp) + 1);
         partial_sum(begin(inp), end(inp), begin(psum) + 1);
         return psum;
     }
-    
+
     vi graph[1001];
     vector<bool> ifvisit(1001, false);
-    
+
     void DFS(int u){
         ifvisit[u] = true;
         for(auto x : graph[u]){
             if(!ifvisit[x]) DFS(x);
         }
     }
-    
+
     // int binarysearch(vi &a, int query){
     //     int left = 0, right = lg(a) - 1;
     //     while(left < right){
     //         int m
     //     }
-    // 
-    
+    //
+
     __akk1to__(){
-        
-    
+
+
     __untrusted__(){
         opt();
         // tc solve(i);
