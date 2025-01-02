@@ -2,14 +2,14 @@ let counter = 0;
 let counter2 = 0;
 
 //Static
-const birthdayString = "Birthday: November 20, 2009";
+const birthdayString = "Birthday: February 20, 2004";
 const celebrateString = "Today is my birthday! Happy birthday to me!"
-const contactmethod = "Contact me through Discord: @hito.akk1to";
+const contactmethod = "Contact me through email: ngthuythienphuc2002@gmail.com";
 
 //Countdown
-const birthdayMonth = 11;
+const birthdayMonth = 2;
 const birthdayDay = 20;
-const birthYear = 2009;
+const birthYear = 2004;
 const today = new Date();
 const dayoftoday = new Date().getDate;
 const monthoftoday = new Date().getMonth;
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     //Status
-    fetch('https://api.lanyard.rest/v1/users/727497287777124414')
+    fetch('https://api.lanyard.rest/v1/users/797656363240128522')
         .then(response => response.json())
         .then(data => {
             const status = data.data.discord_status;
@@ -108,7 +108,7 @@ function setRadioText() {
             var mt = "(Tap here to mute)"
         }
     }
-    document.getElementById("radio-text-1").textContent = "📻 akk1to's chill vibes " + mt;
+    document.getElementById("radio-text-1").textContent = "📻 Hạ Dĩ Đồng's chill vibes " + mt;
     document.getElementById("radio-text-2").textContent = radioPlayingSong;
 }
 
