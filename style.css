@@ -15,17 +15,22 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  -o-filter: blur(15px);
-  filter: blur(15px);
+  /* min-width: 100%;
+  min-height: 100%; */
+  width: 100vw;
+  height: 100vh;
+  /* -o-filter: blur(15px);
+  filter: blur(15px); */
 }
 
 .content {
   max-width: 1000px;
   margin: 20px auto;
+  padding:20px 20px;
+  /* text-align: left; */
   position: relative;
-
+  border-radius: 10px;
+  background-color: rgb(128,128,128,0.7);
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -68,6 +73,7 @@ body {
 
 .bio-avatar {
   position: relative;
+  border-color: white;
 }
 
 #bio-status {
